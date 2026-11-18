@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/readme/logo.png" alt="Soul Launcher" width="140">
+<img src="assets/readme/logo.png" alt="Soul Launcher" width="150">
 
 # Soul Launcher
 
 **Minecraft: Java Edition on Android — fast, modern, and now with two engines.**
 
-<sub>by CRAFT STUDIO</sub>
+<sub>by 7xPojav_</sub>
 
 <br>
 
