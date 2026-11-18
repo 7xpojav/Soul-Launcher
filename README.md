@@ -52,21 +52,14 @@ system, one-tap multiplayer hosting and voice chat — all inside the launcher y
 
 [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) family
 ([Amethyst](https://github.com/AngelAuraMC/Amethyst-Android)).
-**CS Rust Edition** is **MIT** licensed, derived from [Horizon](https://github.com/horizon-rust/horizon)
-by Ludovic Marie and the Horizon contributors and [Horizon Android](https://github.com/Vasysik/horizon-android)
-by Vasysik; Craft Studio's changes are published under the same license at
-[craftstudioteam/cs-rust-edition-](https://github.com/craftstudioteam/cs-rust-edition-).
 
 Every bundled component, author and license is listed in the app under **About › Legal › Open source
 notices**, and in `NOTICE` / `assets/licenses` in this repository. Highlights: OpenJDK (GPL-2.0+CE),
 LWJGL (BSD-3), GLFW / SDL3 (zlib), Holy GL4ES, Mesa/Zink (MIT), LTW (LGPL-3), MobileGlues / CSGE (LGPL-2.1),
 wgpu, winit, e4mc (MIT/Apache-2.0), authlib-injector (AGPL-3, separate program).
 
-Minecraft is a trademark of Mojang Synergies AB / Microsoft. "Craft Studio", "Soul Launcher",
-"CS Engine" and "CS Rust Edition" are Craft Studio's. Privacy policy: in the app (About › Privacy
-policy) and in `PRIVACY_POLICY_en` / `PRIVACY_POLICY_hi`.
 
 <div align="center">
 <br>
-<sub>Made with ❤ by CRAFT STUDIO and the open source community.</sub>
+<sub>Made by 7xPojav_! .</sub>
 </div>
