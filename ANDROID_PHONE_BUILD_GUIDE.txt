@@ -1,0 +1,43 @@
+SOUL LAUNCHER — BUILD APK USING ONLY AN ANDROID PHONE
+
+Recommended method: GitHub Actions (the APK is compiled on GitHub's cloud runner).
+
+1. Create/sign in to a GitHub account in your phone browser.
+2. Install Termux from its official F-Droid page or official GitHub releases. Do not use an outdated Play Store build.
+3. Open Termux and run:
+   pkg update -y && pkg upgrade -y
+   pkg install git unzip gh -y
+   termux-setup-storage
+4. Put this source ZIP in your phone's Download folder.
+5. In Termux run (change the ZIP path if needed):
+   mkdir -p ~/soul-build && cd ~/soul-build
+   cp /sdcard/Download/Soul-Launcher-Source.zip .
+   unzip Soul-Launcher-Source.zip
+   cd CS-LAUNCHER-PLUS-main
+6. Create a new EMPTY GitHub repository named Soul-Launcher (do not add README/license/gitignore).
+7. Authenticate in Termux:
+   gh auth login
+   Choose GitHub.com, HTTPS, and login with a web browser. Complete the code verification in the browser. Never send your password or token to anyone.
+8. Set the remote (replace YOUR_GITHUB_USERNAME):
+   git init -b main
+   git add .
+   git commit -m "Prepare Soul Launcher Android build"
+   git remote add origin https://github.com/YOUR_GITHUB_USERNAME/Soul-Launcher.git
+   git push -u origin main
+
+   If Git says user identity is unknown, run:
+   git config --global user.name "Your GitHub username"
+   git config --global user.email "YOUR_GITHUB-NOREPLY-EMAIL"
+   Then repeat git commit and git push.
+
+9. Open the repository on GitHub in your browser.
+10. Tap Actions. Select "Build Soul Launcher APK". Tap "Run workflow" if it has not started automatically.
+11. Open the running workflow and wait for it to finish. Green check = build succeeded. Red cross = build failed; open the failed step and read its log.
+12. On the completed run, scroll to Artifacts and download "Soul-Launcher-debug-APK". Extract the downloaded ZIP; it contains the APK.
+13. Tap the APK and allow your browser/file manager to install apps from this source if Android asks. Install it.
+
+NOTES:
+- This creates a DEBUG APK for testing, not a Play Store release APK.
+- The workflow fetches Git submodules; if a submodule is unavailable or blocked, the build can fail.
+- A successful APK build only proves the Android app compiled. It does not by itself prove the supplied Soul Client JAR is selectable or works in Minecraft 1.21.11; test that inside the launcher.
+- Do not share GitHub passwords, personal access tokens, signing keystores, or signing passwords.

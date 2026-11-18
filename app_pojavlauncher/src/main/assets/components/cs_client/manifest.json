@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "client": "Soul",
+  "versions": [
+    {
+      "minecraft": "1.21.11",
+      "clientVersion": "1.0.72",
+      "fabricLoaderMin": "0.18.4",
+      "file": "soul-client-1.21.11.jar",
+      "size": 4071776,
+      "sha256": "1ef9ea2d1fe30bc4d467e45865e4e059a7789a4b0ed5347c9b830d11921e492e",
+      "required": [
+        "fabric-api"
+      ],
+      "optional": [
+        "sodium",
+        "lithium",
+        "immediatelyfast",
+        "entityculling",
+        "ferritecore",
+        "modmenu"
+      ]
+    }
+  ]
+}
