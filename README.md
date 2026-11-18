@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/readme/logo.png" alt="Soul Launcher" width="150">
+<img src="logo.png" alt="Soul Launcher" width="150">
 
 # Soul Launcher
 
